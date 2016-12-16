@@ -1,19 +1,55 @@
 @CHARSET "ISO-8859-1";
+body {
+margin:0;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #384538;
 
-ul>li{
+    
+}
 
-	float:left;
-	list-style-type: none;
+li {
+    float: left;
 
 }
-.sopra{
-	float:left;
-	height:50px;
-	padding:15px 15px;
-	font-size:18px;
-
+a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
-nav{
-	  position: fixed;
 
+#tendina{
+	 display: inline-block;
+}
+a:hover:not(#Start) {
+    background-color: #000000;
+}
+#Start{
+	background-color: #c10000;
+}
+
+/* nascondo il contenuto della tendina categorie e lo mostro al 
+   passaggio del mouse(hover)
+*/
+#tendinaContenuto{
+    display: none;
+     position: absolute;
+    min-width: 160px;
+    background-color: #384538;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	
+}
+
+
+#tendina:hover #tendinaContenuto{
+	display:block;
+}
+#tendinaContenuto a:hover{
+	background-color: #000000;
 }
